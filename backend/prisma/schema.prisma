@@ -12,3 +12,10 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Movie {
+  imdbID String @id 
+  title String
+  year Int
+  poster String
+}
